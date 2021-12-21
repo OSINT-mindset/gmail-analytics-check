@@ -1,13 +1,17 @@
-# gmail-analytics-check
+# Gmail Analytics Check
 
 - Find GAIA ID for any Gmail
-- Resolve any secondary email of Gmail account to primary email
+- Resolve any alternate email of Gmail account to the primary email
 
 ## Setup
 
-Download GHunt, make "check_and_gen" and copy resources/data.txt file to path with script.
+You must do it only once for preparing `data.txt` file with long-living cookies.
 
-https://github.com/mxrch/GHunt/tree/master#usage
+1. Create a [Google Analytics project](https://analytics.google.com/analytics/web/#/).
+2. Download [GHunt](https://github.com/mxrch/GHunt), run "check_and_gen"
+3. Generate [cookies the most convenient way](https://github.com/mxrch/GHunt/tree/master#usage
+). 
+4. Сopy resources/data.txt file to path with script.
 
 ## Usage
 
@@ -27,3 +31,9 @@ $ ./check.py alex@telegram.org
 }
 
 ```
+
+## How it works
+
+https://twitter.com/subfnSecurity/status/1255741950914727942
+
+See also: https://t.me/osint_mindset/62
