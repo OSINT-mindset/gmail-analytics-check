@@ -80,5 +80,10 @@ if __name__ == '__main__':
 
     email = sys.argv[1]
 
-    r = requests.post(URL, headers=HEADERS, cookies=COOKIES, data=json.dumps({"email":[email]}))
+    print(HEADERS)
+    print(COOKIES)
+    data = json.dumps({"email":[email]})
+    print(data)
+
+    r = requests.post('https://httpbin.org/anything', headers=HEADERS, cookies=COOKIES, data=data)
     print(r.text)

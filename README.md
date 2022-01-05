@@ -11,19 +11,18 @@ https://github.com/mxrch/GHunt/tree/master#usage
 
 ## Usage
 
+**The tool based on the template [osint-cli-tool-skeleton](https://github.com/soxoj/osint-cli-tool-skeleton)**. Read its README to explore all the available functionality.
+
 ```sh
-$ ./check.py alex@telegram.org
-{
-  "principal": [
-    {
-      "id": "users/105284625337243296778",
-      "user": {
-        "gaiaId": "105284625337243296778",
-        "email": "telegramkotobox42@gmail.com",
-        "lookupKeyEmail": "alex@telegram.org"
-      }
-    }
-  ]
-}
+$ ./run.py ceo@telegram.org
+
+Target: ceo@telegram.org
+Results found: 1
+1) Gaia Id: 105057129383411154227
+Canonical Email: ceo@telegram.org
+
+------------------------------
+Total found: 1
+
 
 ```
